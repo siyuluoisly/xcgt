@@ -16,9 +16,9 @@ public class UserServiceImpl implements UserService{
 	 private UserMapper userMapper;
 	
 	@Override
-	public List<user> getUser(String test) throws Exception {
+	public List<user> getUser() throws Exception {
 		// TODO Auto-generated method stub
-		return userMapper.getUser(test);
+		return userMapper.getUser();
 	}
 
 }

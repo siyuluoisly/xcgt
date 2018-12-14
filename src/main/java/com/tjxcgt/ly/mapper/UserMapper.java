@@ -9,5 +9,5 @@ import com.tjxcgt.ly.entity.user;
 @Mapper
 public interface UserMapper {
 	//获取用户名单
-    public List<user> getUser(String test);
+    public List<user> getUser();
 }

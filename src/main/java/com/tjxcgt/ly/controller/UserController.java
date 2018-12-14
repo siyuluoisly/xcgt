@@ -11,14 +11,15 @@ import com.tjxcgt.ly.entity.user;
 import com.tjxcgt.ly.service.UserService;
 
 @RestController
+@RequestMapping("/list")
 public class UserController {
 	
 	@Autowired
     private UserService userService;
 	
 	//显示用户
-    @RequestMapping("list")
+    @RequestMapping("/user")
     public List<user> index() throws Exception {
-        return userService.getUser("1=1");
+        return userService.getUser();
     }
 }
