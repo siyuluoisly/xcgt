@@ -4,4 +4,7 @@
     <select id="getUser" resultType="com.tjxcgt.ly.entity.user">
         select user_id,user_name from tb_xcgt_user
     </select>
+    <select id="getFileNames" resultType="com.tjxcgt.ly.entity.CommonFormMap">
+        select * from tb_og_files
+    </select>
 </mapper>
